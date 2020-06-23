@@ -9,7 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-    var membersNamesArray  : [String] = [""]
+    var membersNamesArray  : [String] = []
     
     var convertToLetter = true
     @IBOutlet weak var secretSocietyNameLabel: UILabel!
@@ -124,7 +124,7 @@ class ViewController: UIViewController {
 
         for member in array{
             var  prefix = String(member.prefix(1)).uppercased ()
-           var  emoji = emojiLetter[prefix] ?? "❓❓"
+           var  emoji = emojiLetter[prefix] ?? "❓"
             secret += emoji
         }
 
